@@ -4,7 +4,7 @@ public class Product {
 
     private String _id;
     private String _productname;
-    private String _price;
+    private double _price;
 
     public Product() {
     }
@@ -12,12 +12,12 @@ public class Product {
     public Product(String id, String productname, double price) {
         _id = id;
         _productname = productname;
-        _price = Double.toString(price);
+        _price = price;
     }
 
     public Product(String productname, double price) {
         _productname = productname;
-        _price = Double.toString(price);
+        _price = price;
     }
 
     public void setId(String id) {
@@ -37,10 +37,10 @@ public class Product {
     }
 
     public void setPrice(double price) {
-        _price = Double.toString(price);
+        _price = price;
     }
 
-    public String getPrice() {
+    public double getPrice() {
         return _price;
     }
 
